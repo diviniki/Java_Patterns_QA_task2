@@ -31,7 +31,7 @@ class AuthTest {
         $("h2").shouldHave(Condition.exactText("Личный кабинет")).shouldBe(Condition.visible);
     }
 
-    /*@Test
+    @Test
     @DisplayName("Should get error message if login with not registered user")
     void shouldGetErrorIfNotRegisteredUser() {
         var notRegisteredUser = getUser("active");
@@ -71,5 +71,5 @@ class AuthTest {
         $("[data-test-id=password] input").setValue(wrongPassword);
         $("button.button").click();
         $("[data-test-id='error-notification']. notification__content").shouldHave(Condition.text("Ошибка! Неверно указан логин или пароль"), Duration.ofSeconds(10)).shouldBe(Condition.visible);
-    }*/
+    }
 }
